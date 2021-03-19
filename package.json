@@ -1,0 +1,69 @@
+{
+  "name": "hms_front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^5.8.0",
+    "axios": "^0.21.1",
+    "react": "^16.8.6",
+    "react-countup": "^4.3.3",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-loading-skeleton": "^2.2.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.4.1",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.13",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/user-event": "^12.1.1",
+    "craco-alias": "^2.1.1",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "husky": "^4.2.5",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "prettier": "prettier \"**/*.{json,yaml,md}\"  --check",
+    "prettier:fix": "prettier \"**/*.{json,yaml,md}\" --write"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{json,yaml,md}": "prettier --check",
+    "**/*.{js,jsx}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
