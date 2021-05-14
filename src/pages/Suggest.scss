@@ -1,0 +1,15 @@
+.contentBox {
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+}
+.contentBox > div {
+  box-shadow: 0 0 10px #888;
+}
+.paper {
+  margin-left: 20px;
+  background: white;
+  min-height: 50px;
+  // box-shadow: 0 0 5px #335;
+  flex: 1;
+}

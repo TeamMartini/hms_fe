@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    // "baseUrl": "src",
     "paths": {
-      "$components/*": ["components/*"],
-      "$constants/*": ["constants/*"],
-      "$css/*": ["css/*"],
-      "$hooks/*": ["hooks/*"],
-      "$pages/*": ["pages/*"],
-      "$stores/*": ["stores/*"],
-      "$utils/*": ["utils/*"]
+      // "$components/*": ["components/*"],
+      // "$constants/*": ["constants/*"],
+      // "$css/*": ["css/*"],
+      // "$hooks/*": ["hooks/*"],
+      // "$pages/*": ["pages/*"],
+      // "$stores/*": ["stores/*"],
+      // "$utils/*": ["utils/*"]
     }
   },
   "include": ["src"]

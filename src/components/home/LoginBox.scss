@@ -1,0 +1,54 @@
+.loginBox {
+  padding: 30px;
+  background: rgba(15, 55, 116, 0.9);
+  width: 340px;
+  float: left;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.loginTitle {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  margin-left: -2px;
+  margin-right: 4px;
+}
+
+.loginInput > input {
+  margin-bottom: 1px;
+  border-radius: 0;
+  width: 180px;
+  border: 0;
+  background-color: white;
+  box-shadow: none;
+  height: 36px;
+  padding: 0 8px;
+  outline: none;
+}
+
+.loginButton {
+  width: 80px;
+  height: 73px;
+  flex-shrink: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #00b6ad;
+  color: white;
+}

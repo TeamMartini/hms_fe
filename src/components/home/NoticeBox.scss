@@ -1,0 +1,42 @@
+.noticeBox {
+  padding: 30px;
+  width: 340px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+
+.noticeTitle {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(20, 20, 20);
+}
+
+.noticeList {
+  list-style: none;
+}
+
+.noticeList > li {
+  position: relative;
+  margin: 14px 0 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 14px;
+}
+.noticeList > li:last-child {
+  margin: 14px 0 0;
+}
+
+.noticeList > li::after {
+  content: ' ';
+  width: 2px;
+  height: 2px;
+  border-radius: 1px;
+  background: rgb(20, 20, 20);
+  left: 5px;
+  top: 8px;
+  position: absolute;
+}

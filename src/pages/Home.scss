@@ -1,0 +1,31 @@
+.container {
+  background-image: url('https://www.hallym.ac.kr/.attach/FILE_000000000020618?fileSn=0');
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  filter: brightness(90%);
+}
+
+.centerBox {
+  display: flex;
+  width: 70%;
+  margin: 40px auto 0;
+}
+
+.leftBox {
+  display: flex;
+  flex: 1 0;
+}
+
+.rightBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightBox > div:last-child {
+  margin-top: 20px;
+}

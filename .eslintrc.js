@@ -26,4 +26,15 @@ module.exports = {
     // camelCase를 따르는게 좋긴 하지만 `_`를 어쩔수 없이 써야하는 상황을 위해(가령 백엔드가 mongoDB)
     'import/no-extraneous-dependencies': ['off'],
   },
+  settings: {
+    "import/resolver": {
+      alias: {
+        extensions: [".js"],
+        map: [
+          ["$pages", "../pages"],
+          ["$components", "../components"]
+        ]
+      }
+    }
+  }
 };
