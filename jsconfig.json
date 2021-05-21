@@ -1,15 +1,6 @@
 {
   "compilerOptions": {
-    // "baseUrl": "src",
-    "paths": {
-      // "$components/*": ["components/*"],
-      // "$constants/*": ["constants/*"],
-      // "$css/*": ["css/*"],
-      // "$hooks/*": ["hooks/*"],
-      // "$pages/*": ["pages/*"],
-      // "$stores/*": ["stores/*"],
-      // "$utils/*": ["utils/*"]
-    }
+    "paths": {}
   },
   "include": ["src"]
 }
