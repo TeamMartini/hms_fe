@@ -6,7 +6,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: rgba(15, 55, 116, 0.9);
+  color: rgba(34, 152, 255, 0.8);
+  // color: rgba(15, 55, 116, 0.9);
 }
 .header-menu {
   display: flex;
@@ -30,5 +31,5 @@
 }
 
 .header-menu > a:hover {
-  border-bottom: 3px solid rgba(15, 55, 116, 0.9);
+  border-bottom: 3px solid rgba(4,109,198,0.8);
 }

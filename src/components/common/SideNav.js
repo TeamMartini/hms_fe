@@ -9,7 +9,7 @@ const SideNav = () => (
     <div className="sideNavMenu">
       <ul>
         <li>자유게시판</li>
-        <li>건의/질문</li>
+        <li>건의게시판</li>
       </ul>
     </div>
   </div>
