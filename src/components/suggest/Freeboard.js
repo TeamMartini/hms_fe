@@ -3,7 +3,7 @@ import './Freeboard.scss';
 
 const Freeboard = () => (
   <div className="free-wrap">
-    <h1 className="free-title">자유게시판</h1>
+    <h1 className="free-title">공지사항</h1>
     <div className="free-title-div" />
     <div className="board-write">
       <button type="button">글쓰기</button>
