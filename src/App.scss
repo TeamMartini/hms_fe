@@ -3,10 +3,26 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+body {
+  overflow-y: scroll;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
 li {
   list-style: none;
+}
+
+.background {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('https://user-images.githubusercontent.com/46181173/119224102-dc62f400-bb37-11eb-845c-bbe5a58b82b1.png');
 }

@@ -9,11 +9,11 @@ const Home = () => (
   <Template>
     <div className="centerBox">
       <div className="leftBox">
-        <VillageBox />
-      </div>
-      <div className="rightBox">
         <LoginBox />
         <NoticeBox />
+      </div>
+      <div className="rightBox">
+        <VillageBox />
       </div>
     </div>
   </Template>

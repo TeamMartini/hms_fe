@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SideNav.scss';
 
 const SideNav = () => (
@@ -8,8 +9,9 @@ const SideNav = () => (
     </div>
     <div className="sideNavMenu">
       <ul>
-        <li>자유게시판</li>
-        <li>건의게시판</li>
+        <Link to="/suggest"><li>건의게시판</li></Link>
+        <Link to="/suggest/free"><li>자유게시판</li></Link>
+        <Link to="/suggest/faq"><li>FAQ</li></Link>
       </ul>
     </div>
   </div>
