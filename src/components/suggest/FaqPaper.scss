@@ -31,6 +31,7 @@
 .faq-search > input {
   flex: 1;
   border: 2px solid #2e75b6;
+  padding: 0 12px;
   height: 40px;
   background: rgba(255, 255, 255, 0.8);
 }
@@ -51,6 +52,11 @@
   outline: none;
   transition: 0.4s;
   border-bottom: none;
+  font-size: 16px;
+}
+
+.accordion > span {
+  font-weight: bold;
 }
 
 .accordion:last-of-type {

@@ -1,0 +1,87 @@
+.free-wrap {
+  padding: 20px 40px;
+  background: rgba(240, 240, 240, 0.85);
+}
+
+.free-title {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.free-title-div {
+  background: #2e75b6;
+  width: 100%;
+  height: 8px;
+}
+
+.board-write {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.board-write > button {
+  margin: 12px 0 8px;
+  background: #2e75b6;
+  padding: 6px 12px;
+  color: white;
+  border: none;
+}
+
+.free-board {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.board-row ~ .board-row {
+  border-top: 1px solid #2e75b6;
+}
+
+.row-header {
+  background: #2e75b6;
+}
+
+.row-header > p {
+  color: white !important;
+  font-size: 16px !important;
+  text-align: center !important;
+}
+
+.board-row {
+  display: flex;
+  line-height: 30px;
+  padding: 4px 2px;
+}
+
+.board-row:not(.row-header):hover {
+  background: rgba(240, 240, 240, 0.9);
+}
+
+.board-num {
+  width: 46px;
+  height: 30px;
+  font-size: 14px;
+  padding: 0 2px;
+  color: #888;
+  text-align: center;
+}
+.board-title {
+  flex: 1;
+}
+.board-author {
+  width: 80px;
+  padding: 0 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 15px;
+}
+.board-date {
+  width: 80px;
+  padding: 0 2px;
+  text-align: center;
+  font-size: 15px;
+  color: #999;
+}

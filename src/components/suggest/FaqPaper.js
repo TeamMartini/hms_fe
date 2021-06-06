@@ -29,14 +29,24 @@ const FaqPaper = () => {
         <button type="button">검색</button>
       </div>
       <div className="faq-sheet">
-        <button type="submit" className="accordion">Section 1</button>
+        <button type="submit" className="accordion">
+          <span>[회원정보]</span>
+          {' '}
+          로그인이 안돼요.
+        </button>
         <div className="panel">
-          <p>Lorem ipsum...</p>
+          <p>소프트웨어 빌리지는 한림대학교 포털 아이디와 비밀번호를 사용합니다.</p>
+          <p>한림대학교 포털에서 아이디와 비밀번호를 확인하신 후 로그인 해주세요.</p>
         </div>
 
-        <button type="submit" className="accordion">Section 2</button>
+        <button type="submit" className="accordion">
+          <span>[회원정보]</span>
+          {' '}
+          회원 탈퇴를 하고 싶어요.
+        </button>
         <div className="panel">
-          <p>Lorem ipsum...</p>
+          <p>소프트웨어 빌리지는 한림대학교 포털 아이디와 비밀번호를 사용합니다.</p>
+          <p>따라서 별도의 회원 탈퇴는 지원하고 있지 않습니다.</p>
         </div>
 
         <button type="submit" className="accordion">Section 3</button>
