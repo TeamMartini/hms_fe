@@ -1,18 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Routes from '../../constants/routes';
 import './Header.scss';
 
-const Header = () => (
-  <div className="header">
-    <Link to={Routes.ROOT}><h1>HLSW Village</h1></Link>
-    <div className="header-menu">
-      <Link to={Routes.ROOT}><div>홈</div></Link>
-      <Link to={Routes.INTRO}><div>소개</div></Link>
-      <Link to={Routes.PLACE}><div>공간</div></Link>
-      <Link to={Routes.SUGGEST}><div>커뮤니티</div></Link>
+const Header = () => {
+  const { pathname } = useLocation();
+  const menus = [{
+    path: Routes.ROOT,
+    text: '홈',
+  }, {
+    path: Routes.INTRO,
+    text: '소개',
+  }, {
+    path: Routes.PLACE,
+    text: '공간',
+  }, {
+    path: Routes.FREE,
+    text: '커뮤니티',
+  }];
+  return (
+    <div className="header">
+      <Link to={Routes.ROOT}><h1>HLSW Village</h1></Link>
+      <div className="header-menu">
+        {menus.map(({ path, text }) => <Link key="path" to={path} className={path === pathname ? 'menu-active' : ''}><div>{text}</div></Link>)}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Header;

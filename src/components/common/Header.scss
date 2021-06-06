@@ -30,6 +30,7 @@
   margin: 0 4px;
 }
 
+.menu-active,
 .header-menu > a:hover {
-  border-bottom: 3px solid rgba(4,109,198,0.8);
+  border-bottom: 3px solid rgba(4, 109, 198, 0.8) !important;
 }

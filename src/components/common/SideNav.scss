@@ -23,5 +23,7 @@
 }
 .sideNavMenu > ul li:hover {
   background-color: rgb(224, 224, 224);
-  font-weight: bold;
+}
+.nav-active > li {
+  background: rgba(4, 109, 198, 0.3) !important;
 }
