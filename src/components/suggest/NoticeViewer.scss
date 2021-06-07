@@ -1,0 +1,20 @@
+.nov-title {
+  height: 36px;
+  background: #d9d9d9;
+  border-bottom: 2px solid#bbb;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nov-content {
+  min-height: 100px;
+  background: #eeeeee;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.nov-content > pre {
+  white-space: pre-wrap;
+}

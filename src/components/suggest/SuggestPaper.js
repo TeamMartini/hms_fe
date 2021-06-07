@@ -70,7 +70,7 @@ const SuggestPaper = observer(() => {
             <textarea id="content" className="sug-content" />
           </div>
         </div>
-        <button type="button" onClick={handleSuggestClick}>보내기</button>
+        <button className="rnd-btn" type="button" onClick={handleSuggestClick}>보내기</button>
       </div>
     </div>
   );

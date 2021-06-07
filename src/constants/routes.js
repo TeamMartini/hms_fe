@@ -6,6 +6,7 @@ const Routes = {
   SUGGEST: '/suggest',
   FAQ: '/suggest/faq',
   WRITE: '/suggest/write',
+  READ: '/suggest/read?',
 
   API: {
     LOGIN: '/auth/login',
@@ -17,6 +18,7 @@ const Routes = {
 
     BOARD_ADD: '/board/createBoard',
     BOARD_LIST: '/board/listBoard',
+    BOARD_INFO: '/board/getBoardInfo/',
   },
 };
 

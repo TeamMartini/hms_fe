@@ -78,6 +78,9 @@
 }
 .board-title {
   flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .board-author {
   width: 80px;
@@ -94,4 +97,14 @@
   text-align: center;
   font-size: 14px;
   color: #999;
+}
+.free-ctrl {
+  margin-top: 10px;
+  height: 40px;
+}
+.free-left {
+  float: left;
+}
+.free-right {
+  float: right;
 }

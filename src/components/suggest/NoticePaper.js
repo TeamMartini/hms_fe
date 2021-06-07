@@ -58,7 +58,7 @@ const NoticePaper = observer(() => {
             <textarea id="content" className="sug-content" />
           </div>
         </div>
-        <button type="button" onClick={handleBoardClick}>보내기</button>
+        <button className="rnd-btn" type="button" onClick={handleBoardClick}>작성하기</button>
       </div>
     </div>
   );

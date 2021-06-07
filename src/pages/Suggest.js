@@ -6,6 +6,7 @@ import Template from '../components/common/Template';
 import FaqPaper from '../components/suggest/FaqPaper';
 import Freeboard from '../components/suggest/Freeboard';
 import NoticePaper from '../components/suggest/NoticePaper';
+import NoticeViewer from '../components/suggest/NoticeViewer';
 import SuggestPaper from '../components/suggest/SuggestPaper';
 import './Suggest.scss';
 
@@ -13,14 +14,20 @@ const Suggest = () => {
   const { pathname } = useLocation();
   let path = pathname.substr(8);
   if (path.startsWith('/')) path = path.substr(1);
-  if (path.endsWith('/')) path = path.substr(0, path.length - 1);
+  if (path.indexOf('/')) [path] = path.split('/');
 
-  let child = (path === 'free') ? <Freeboard /> : null;
-  if (!child) {
-    child = (path === 'faq') ? <FaqPaper /> : null;
-  }
-  if (!child) {
-    child = (path === 'write') ? <NoticePaper /> : <SuggestPaper />;
+  let child = null;
+  switch (path) {
+    case 'free': child = <Freeboard />;
+      break;
+    case 'faq': child = <FaqPaper />;
+      break;
+    case 'write': child = <NoticePaper />;
+      break;
+    case 'read': child = <NoticeViewer />;
+      break;
+    default:
+      child = <SuggestPaper />;
   }
 
   return (
