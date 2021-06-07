@@ -19,8 +19,6 @@ const Suggest = () => {
     child = (path === 'faq') ? <FaqPaper /> : <SuggestPaper />;
   }
 
-  console.log(path);
-
   return (
     <Template>
       <Container className="contentBox">

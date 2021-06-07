@@ -5,16 +5,16 @@ import { useAuthStore } from '../../stores';
 import './LoginBox.scss';
 
 const LoginBox = observer(() => {
-  const { login } = useAuthStore();
+  const { login, username } = useAuthStore();
 
   const handleLoginClick = () => {
-    const username = document.getElementById('uname').value;
-    const password = document.getElementById('upass').value;
-    login(username, password);
+    const uname = document.getElementById('uname').value;
+    const upass = document.getElementById('upass').value;
+    login(uname, upass);
   };
 
-  return (
-    <div className="loginBox">
+  const LoginNedded = () => (
+    <div>
       <h2 className="loginTitle">로그인</h2>
       <div className="inputBox">
         <div className="loginInput">
@@ -25,6 +25,24 @@ const LoginBox = observer(() => {
           로그인
         </button>
       </div>
+    </div>
+  );
+
+  return (
+    <div className="loginBox">
+      {username
+        ? (
+          <div>
+            <p>
+              안녕하세요
+              {' '}
+              {username}
+              {' '}
+              님
+            </p>
+          </div>
+        )
+        : <LoginNedded />}
     </div>
   );
 });

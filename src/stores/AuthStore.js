@@ -10,7 +10,8 @@ const AuthStore = () => ({
     if (code === 200) {
       // login success
       api.setToken(this.token = token);
-      const { code: _code, username: _username, name: _name } = api.get(Routes.API.CHECK);
+      const { code: _code, info } = await api.get(Routes.API.CHECK);
+      const { username: _username, name: _name } = info;
       if (_code === 200) {
         // user check success
         this.username = _username;
