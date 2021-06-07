@@ -5,9 +5,9 @@ import { useAuthStore } from '../../stores';
 import './LoginBox.scss';
 
 const LoginBox = observer(() => {
-  const { login, username } = useAuthStore();
+  const { login, username, logout } = useAuthStore();
 
-  const handleLoginClick = () => {
+  const handleLoginClick = async () => {
     const uname = document.getElementById('uname').value;
     const upass = document.getElementById('upass').value;
     login(uname, upass);
@@ -40,6 +40,7 @@ const LoginBox = observer(() => {
               {' '}
               님
             </p>
+            <button type="button" onClick={logout}>로그아웃</button>
           </div>
         )
         : <LoginNedded />}

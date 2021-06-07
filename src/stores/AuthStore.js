@@ -3,9 +3,10 @@ import api from '../utils/api';
 
 const AuthStore = () => ({
   token: null,
-  username: null,
+  username: '',
   name: null,
   admin: false,
+  checked: false,
   async login(username, password) {
     const { code, token } = await api.post(Routes.API.LOGIN, { username, password });
     if (code === 200) {
@@ -26,15 +27,17 @@ const AuthStore = () => ({
     this.saveToken(null);
   },
   async check() {
+    this.checked = true;
     const { code: _code, info } = await api.get(Routes.API.CHECK);
-    const { username: _username, name: _name, _admin } = info;
     if (_code === 200) {
       // user check success
-      this.username = _username;
-      this.name = _name;
-      this.admin = _admin;
+      this.username = info.username;
+      this.name = info._name;
+      this.admin = info._admin;
+      this.checked = true;
       return true;
     }
+    this.checked = true;
     return false;
   },
   saveToken(_token) {
@@ -42,12 +45,12 @@ const AuthStore = () => ({
       window.localStorage.setItem('token', _token);
     }
   },
-  checkAutoLogin() {
+  async checkAutoLogin() {
     if (window) {
       const stored = window.localStorage.getItem('token') || null;
       if (stored) {
         api.setToken(this.token = stored);
-        this.check();
+        await this.check();
       }
     }
   },

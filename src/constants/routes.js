@@ -11,6 +11,8 @@ const Routes = {
     CHECK: '/auth/check',
 
     FAQ_LIST: '/faq/listFaq',
+
+    SUGGEST_ADD: '/suggest/createSuggest',
   },
 };
 
