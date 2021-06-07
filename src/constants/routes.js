@@ -5,6 +5,11 @@ const Routes = {
   FREE: '/suggest/free',
   SUGGEST: '/suggest',
   FAQ: '/suggest/faq',
+
+  API: {
+    LOGIN: '/auth/login',
+    CHECK: '/auth/check',
+  },
 };
 
 export default Routes;
