@@ -22,7 +22,7 @@ const FaqPaper = () => {
   }, []);
   return (
     <div className="faq-wrap">
-      <h1 className="faq-title">커뮤니티</h1>
+      <h1 className="faq-title">FAQ</h1>
       <div className="faq-title-div" />
       <div className="faq-search">
         <input />

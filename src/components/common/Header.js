@@ -22,7 +22,7 @@ const Header = () => {
     <div className="header">
       <Link to={Routes.ROOT}><h1>HLSW Village</h1></Link>
       <div className="header-menu">
-        {menus.map(({ path, text }) => <Link key="path" to={path} className={path === pathname ? 'menu-active' : ''}><div>{text}</div></Link>)}
+        {menus.map(({ path, text }) => <Link key={path} to={path} className={path === pathname ? 'menu-active' : ''}><div>{text}</div></Link>)}
       </div>
     </div>
   );
