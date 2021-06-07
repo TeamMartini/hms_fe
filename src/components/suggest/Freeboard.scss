@@ -18,7 +18,16 @@
 
 .board-write {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board-write > input {
+  border: 2px solid #2e75b6;
+  height: 26px;
+  outline: none;
+  padding: 0 6px;
+  min-width: 220px;
 }
 
 .board-write > button {
@@ -83,6 +92,6 @@
   width: 80px;
   padding: 0 2px;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   color: #999;
 }

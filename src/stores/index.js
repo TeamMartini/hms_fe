@@ -2,6 +2,7 @@
 import { useLocalStore } from 'mobx-react-lite';
 import React, { createContext, useContext } from 'react';
 import AuthStore from './AuthStore';
+import BoardStore from './BoardStore';
 import FaqStore from './FaqStore';
 import TestStore from './TestStore';
 
@@ -12,6 +13,7 @@ export const RootProvider = ({ children }) => {
     testStore: useLocalStore(TestStore),
     authStore: useLocalStore(AuthStore),
     faqStore: useLocalStore(FaqStore),
+    boardStore: useLocalStore(BoardStore),
   };
   return <rootContext.Provider value={stores}>{children}</rootContext.Provider>;
 };
@@ -27,3 +29,4 @@ export const useRootStore = () => {
 export const useTestStore = () => useRootStore().testStore;
 export const useAuthStore = () => useRootStore().authStore;
 export const useFaqStore = () => useRootStore().faqStore;
+export const useBoardStore = () => useRootStore().boardStore;

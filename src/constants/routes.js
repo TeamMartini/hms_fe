@@ -14,7 +14,7 @@ const Routes = {
 
     SUGGEST_ADD: '/suggest/createSuggest',
 
-    BOARD_LIST: '/board/listBoards',
+    BOARD_LIST: '/board/listBoard',
   },
 };
 

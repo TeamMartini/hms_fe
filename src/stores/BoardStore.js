@@ -1,12 +1,12 @@
-const { default: Routes } = require('../constants/routes');
-const api = require('../utils/api');
+import Routes from '../constants/routes';
+import api from '../utils/api';
 
 const BoardStore = () => ({
   _boardList: [],
   query: '',
   async fetchBoardList() {
-    const { boards } = await api.get(Routes.API.BOARD_LIST);
-    this._boardList = boards;
+    const { board } = await api.get(Routes.API.BOARD_LIST);
+    this._boardList = board.length !== 0 ? board.reverse() : [{ title: '글이 없습니다' }];
   },
   filterFunc({ title, contents }) {
     return title.indexOf(this.query) !== -1 || contents.indexOf(this.query) !== -1;
@@ -15,7 +15,9 @@ const BoardStore = () => ({
     this.query = _query;
   },
   get boardList() {
-    return this._boardList.filter(this.filterFunc);
+    const boards = this._boardList.filter(this.filterFunc);
+    const count = Math.min(boards.length, 10);
+    return boards.splice(0, count);
   },
 });
 
