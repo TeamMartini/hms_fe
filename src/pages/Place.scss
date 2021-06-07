@@ -12,9 +12,15 @@
   background: rgba(240, 240, 240, 0.85);
 }
 
+.place01 {
+  margin-top: 20px;
+  width: 80%;
+}
+
 .place-img {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 15px;
 }
 
 .place-time {
@@ -95,7 +101,7 @@
 .place-notice {
   margin-top: 20px;
   padding: 20px;
-  height: 400px;
+  height: 500px;
   display: flex;
   text-align: center;
   flex-direction: column;
