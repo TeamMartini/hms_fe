@@ -26,6 +26,11 @@
   font-size: 32px;
 }
 
+.intro-first-wrap {
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 50px;
+}
+
 .intro-title-div {
   background: rgba(250, 148, 15, 0.63);
   height: 8px;
@@ -33,20 +38,21 @@
   margin-bottom: 16px;
 }
 .intro-text {
-  padding: 10px;
+  margin: 30px 30px 0px 30px;
 }
 .intro-text > img {
   float: left;
   width: 500px;
-  margin: 35px 10px 5px 0;
+  margin: 35px 15px 5px 0;
 }
 .text-cont {
   display: inline;
   font-size: 18px;
   padding: 1px;
   line-height: 180%;
-  color: white;
-  text-shadow: 2px 2px 2px black;
+  color: black;
+  margin: 10px 10px 10px 10px;
+  // text-shadow: 2px 2px 2px black;
 }
 
 .intro-inner-img {
@@ -54,8 +60,7 @@
 }
 
 .intro-inner-img img {
-  width: 512px;
-  height: 260px;
+  width: calc(33% - 21px);
   padding: 10px;
 }
 
