@@ -13,9 +13,9 @@ import LoginChecker from './components/common/LoginChecker';
 
 const App = () => (
   <RootProvider>
+    <LoginChecker />
     <BrowserRouter>
       <div className="background" />
-      <LoginChecker />
       <Switch>
         <Route exact path={Routes.ROOT} component={Home} />
         <Route path={Routes.INTRO} component={Intro} />

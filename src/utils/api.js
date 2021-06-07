@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const api = (() => {
+  const { CancelToken } = axios;
+  const source = CancelToken.source();
   let token = null;
+  const done = true;
   const _api = axios.create({
     baseURL: 'http://localhost:3003/api',
     timeout: 5000,
@@ -9,6 +12,7 @@ const api = (() => {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     },
+    cancelToken: source.token,
   });
   _api.interceptors.response.use(
     response => {
@@ -27,7 +31,9 @@ const api = (() => {
   );
 
   function setToken(_token) {
-    token = _token;
+    if (done) {
+      token = _token;
+    }
   }
 
   function get(path, data = {}) {
@@ -50,6 +56,7 @@ const api = (() => {
       },
     });
   }
+
   return {
     _api,
     setToken,

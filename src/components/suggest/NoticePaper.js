@@ -1,29 +1,10 @@
 import { observer } from 'mobx-react-lite';
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router';
+import React from 'react';
 import Routes from '../../constants/routes';
-import { useAuthStore } from '../../stores';
 import api from '../../utils/api';
 import './SuggestPaper.scss';
 
 const NoticePaper = observer(() => {
-  const { checkAutoLogin, username, admin } = useAuthStore();
-  const history = useHistory();
-
-  useEffect(() => {
-    async function checkLogin() {
-      await checkAutoLogin();
-      if (!username) {
-        history.push('/?ref=/suggest');
-      }
-      if (!admin) {
-        alert('관리자만 접근 가능합니다');
-        history.push(Routes.FREE);
-      }
-    }
-    checkLogin();
-  }, [admin, checkAutoLogin, history, username]);
-
   const handleBoardClick = () => {
     const title = document.getElementById('title');
     const content = document.getElementById('content');

@@ -1,25 +1,10 @@
 import { observer } from 'mobx-react-lite';
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router';
+import React from 'react';
 import Routes from '../../constants/routes';
-import { useAuthStore } from '../../stores';
 import api from '../../utils/api';
 import './SuggestPaper.scss';
 
 const SuggestPaper = observer(() => {
-  const { checkAutoLogin, username } = useAuthStore();
-  const history = useHistory();
-
-  useEffect(() => {
-    async function checkLogin() {
-      await checkAutoLogin();
-      if (!username) {
-        history.push('/?ref=/suggest');
-      }
-    }
-    checkLogin();
-  }, [checkAutoLogin, history, username]);
-
   const handleSuggestClick = () => {
     const title = document.getElementById('title');
     const contact = document.getElementById('contact');

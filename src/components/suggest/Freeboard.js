@@ -3,13 +3,16 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import Routes from '../../constants/routes';
-import { useBoardStore } from '../../stores';
+import { useAuthStore, useBoardStore } from '../../stores';
 import './Freeboard.scss';
 
 const Freeboard = observer(() => {
   const {
     fetchBoardList, boardList, query, setQuery, setPage, page, maxPage,
   } = useBoardStore();
+  const {
+    admin,
+  } = useAuthStore();
 
   const history = useHistory();
 
@@ -31,7 +34,7 @@ const Freeboard = observer(() => {
       <div className="free-title-div" />
       <div className="board-write">
         <input placeholder="검색어 입력" value={query} onChange={handleQueryInput} />
-        <button type="button" onClick={handleWriteClick}>글쓰기</button>
+        {admin && <button type="button" onClick={handleWriteClick}>글쓰기</button>}
       </div>
       <div className="free-board">
         <div className="board-row row-header">
