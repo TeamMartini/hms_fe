@@ -13,6 +13,8 @@ const Routes = {
     FAQ_LIST: '/faq/listFaq',
 
     SUGGEST_ADD: '/suggest/createSuggest',
+
+    BOARD_LIST: '/board/listBoards',
   },
 };
 
