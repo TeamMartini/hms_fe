@@ -64,10 +64,18 @@
   padding: 10px;
 }
 
-.intro-drawing-img {
+.intro-drawing-3d-img {
   text-align: center;
 }
-.intro-drawing-img img {
-  width: 1024px;
+.intro-drawing-3d-img img {
+  width: calc(33% - 21px);
+  padding: 10px;
+}
+
+.intro-drawing-2d-img {
+  text-align: center;
+}
+.intro-drawing-2d-img img {
+  width: calc(100% - 36px);
   padding: 10px;
 }
