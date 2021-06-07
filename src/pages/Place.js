@@ -49,11 +49,10 @@ const Place = () => (
               <span>준수 사항</span>
             </p>
             <div className="place-content">
-              <p>
-                <div>1. 이용 후 문 꼭 잠그기</div>
-                <div>2. 뒷 정리 깨끗히 하기</div>
-                <div>3. 고성방가 금지</div>
-              </p>
+              <p>1. 이용 후 문 꼭 잠그기</p>
+              <p>2. 뒷 정리 깨끗히 하기</p>
+              <p>3. 고성방가 금지</p>
+              <p>4. 대여 시간 준수하기</p>
             </div>
           </div>
         </div>
