@@ -42,6 +42,35 @@
   outline: none;
 }
 
+.loggedin {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.loggedin-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loggedin-place {
+  margin-top: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #eee;
+  font-size: 14px;
+}
+
+.place-status {
+  flex: 1;
+  border: 2px solid #fff;
+  border-left: none;
+  border-right: none;
+  margin: 4px 0;
+  padding: 4px;
+}
+
 .loginButton {
   width: 80px;
   height: 73px;
@@ -52,4 +81,11 @@
   box-shadow: none;
   background-color: #00b6ad;
   color: white;
+}
+
+.logout-button {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
 }

@@ -26,15 +26,23 @@ const LoginBox = observer(({ login, logout }) => {
 
   return (
     <div className="loginBox">
-      <div className={username ? '' : 'hidden'}>
-        <p>
-          안녕하세요
-          {' '}
-          {name}
-          {' '}
-          님
-        </p>
-        <button type="button" onClick={logout}>로그아웃</button>
+      <div className={username ? 'loggedin' : 'hidden'}>
+        <div className="loggedin-user">
+          <p style={{ color: '#222' }}>
+            안녕하세요
+            {' '}
+            <span style={{ fontWeight: 'bold' }}>{name}</span>
+            {' '}
+            님
+          </p>
+          <button className="logout-button" type="button" onClick={logout}>로그아웃</button>
+        </div>
+        <div className="loggedin-place">
+          <p>대여현황</p>
+          <div className="place-status">
+            <p>대여 내역이 없습니다.</p>
+          </div>
+        </div>
       </div>
       <LoginNedded />
     </div>

@@ -12,14 +12,24 @@
 }
 
 .place01 {
-  margin-top: 20px;
-  width: 80%;
+  width: 100%;
 }
 
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .place-img {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.place-img > div {
+  position: relative;
+  margin: 20px auto 0;
+  width: 80%;
 }
 
 .place-time {
@@ -47,9 +57,9 @@
 
 .time-consume {
   color: #2e75b6;
-  margin-top: 36px;
+  margin-top: 16px;
   font-size: 17px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .time-table {
@@ -65,7 +75,7 @@
 }
 
 .time-alert {
-  margin-top: 40px;
+  margin-top: 20px;
   color: red;
   font-size: 15px;
 }
@@ -122,4 +132,28 @@
 
 .place-content > p {
   padding: 10px;
+}
+
+.image-map:hover {
+  background: rgba(240, 240, 240, 0.85);
+}
+
+.image-map {
+  position: absolute;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.image-map.on {
+  background: #2e75b6cc;
+}
+
+.time-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #2e75b6;
+  font-weight: bold;
 }
