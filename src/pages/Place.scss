@@ -72,6 +72,19 @@
   height: 32px;
   padding: 6px;
   line-height: 32px;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.time-table > li.time-active {
+  background: #2e75b6;
+}
+.time-table > li.time-active:hover {
+  background: #105494;
+}
+
+.time-table > li:not(.time-active):hover {
+  background: #ddd;
 }
 
 .time-alert {
