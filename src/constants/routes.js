@@ -9,6 +9,8 @@ const Routes = {
   API: {
     LOGIN: '/auth/login',
     CHECK: '/auth/check',
+
+    FAQ_LIST: '/faq/listFaq',
   },
 };
 

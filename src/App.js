@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import { RootProvider } from './stores';
 import Routes from './constants/routes';
 import Intro from './pages/Intro';
@@ -8,21 +9,21 @@ import Suggest from './pages/Suggest';
 
 import './App.scss';
 import Place from './pages/Place';
+import LoginChecker from './components/common/LoginChecker';
 
-function App() {
-  return (
-    <RootProvider>
-      <BrowserRouter>
-        <div className="background" />
-        <Switch>
-          <Route exact path={Routes.ROOT} component={Home} />
-          <Route path={Routes.INTRO} component={Intro} />
-          <Route path={Routes.PLACE} component={Place} />
-          <Route path={Routes.SUGGEST} component={Suggest} />
-        </Switch>
-      </BrowserRouter>
-    </RootProvider>
-  );
-}
+const App = () => (
+  <RootProvider>
+    <BrowserRouter>
+      <div className="background" />
+      <LoginChecker />
+      <Switch>
+        <Route exact path={Routes.ROOT} component={Home} />
+        <Route path={Routes.INTRO} component={Intro} />
+        <Route path={Routes.PLACE} component={Place} />
+        <Route path={Routes.SUGGEST} component={Suggest} />
+      </Switch>
+    </BrowserRouter>
+  </RootProvider>
+);
 
 export default App;
