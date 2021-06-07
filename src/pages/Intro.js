@@ -22,25 +22,21 @@ const Intro = () => {
       <Container className="contentBox">
         <Container className="paper-intro">
           <div className="paper-wrap">
-
             <h1 className="intro-title">빌리지 소개</h1>
             <div className="intro-title-div" />
 
-            <div className="intro-first-wrap">
-              <div className="intro-text">
-                <img src="https://user-images.githubusercontent.com/46181173/121013949-65cf2300-c7d4-11eb-8065-ac0e27f83be5.png" alt="" />
-                <div className="text-cont">
-                  {introText.split('\n').map(line => (
-                    <p key={line.split(0, 5)}>
-                      {line}
-                      <br />
-                      <br />
-                    </p>
-                  ))}
-                </div>
+            <div className="intro-text">
+              <img src="https://user-images.githubusercontent.com/46181173/121013949-65cf2300-c7d4-11eb-8065-ac0e27f83be5.png" alt="" />
+              <div className="text-cont">
+                {introText.split('\n').map(line => (
+                  <p key={line.split(0, 5)}>
+                    {line}
+                    <br />
+                    <br />
+                  </p>
+                ))}
               </div>
             </div>
-
             <h1 className="intro-title">빌리지 내부</h1>
             <div className="intro-title-div" />
 
@@ -55,12 +51,14 @@ const Intro = () => {
               <img className="intro-img-01" src="https://user-images.githubusercontent.com/46181173/121013932-62d43280-c7d4-11eb-8f94-34638a1ff02b.png" alt="" />
               <img className="intro-img-01" src="https://user-images.githubusercontent.com/46181173/121013933-62d43280-c7d4-11eb-98a3-3aa530748e91.png" alt="" />
               <img className="intro-img-01" src="https://user-images.githubusercontent.com/46181173/121013934-636cc900-c7d4-11eb-8167-b355e9f5be3f.png" alt="" />
+
             </div>
 
             <h1 className="intro-title-02">빌리지 도면</h1>
             <div className="intro-title-div" />
 
             <div className="intro-drawing-img">
+
               <img className="intro-img-01" src="https://user-images.githubusercontent.com/46181173/121013909-5fd94200-c7d4-11eb-86ae-2c3a285fb24c.png" alt="" />
               <img className="intro-img-01" src="https://user-images.githubusercontent.com/46181173/121013914-5fd94200-c7d4-11eb-92b2-d6eec38ef3cd.png" alt="" />
               <img className="intro-img-01" src="https://user-images.githubusercontent.com/46181173/121013919-610a6f00-c7d4-11eb-910d-8bdc65bc2dc2.png" alt="" />
