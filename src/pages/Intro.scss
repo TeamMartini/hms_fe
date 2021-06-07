@@ -1,7 +1,7 @@
 .paper-intro {
   margin-top: 60px;
   margin-left: 20px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(13, 138, 196, 0.5);
   min-height: 50px;
   // box-shadow: 0 0 5px #335;
   flex: 1;
@@ -11,13 +11,23 @@
 .paper-wrap {
   padding: 60px;
 }
+
 .intro-title {
+  color: rgba(255, 255, 255, 0.87);
   font-weight: normal;
   margin-bottom: 16px;
   font-size: 32px;
 }
+.intro-title-02 {
+  color: rgba(255, 255, 255, 0.747);
+  font-weight: normal;
+  margin-top: 100px;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
 .intro-title-div {
-  background: rgb(91, 155, 213);
+  background: rgba(250, 148, 15, 0.63);
   height: 8px;
   width: 100%;
   margin-bottom: 16px;
@@ -28,11 +38,31 @@
 .intro-text > img {
   float: left;
   width: 500px;
-  margin: 5px 10px 5px 0;
+  margin: 35px 10px 5px 0;
 }
 .text-cont {
   display: inline;
   font-size: 18px;
-  padding: 10px;
+  padding: 1px;
   line-height: 180%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.intro-inner-img {
+  text-align: center;
+}
+
+.intro-inner-img img {
+  width: 512px;
+  height: 260px;
+  padding: 10px;
+}
+
+.intro-drawing-img {
+  text-align: center;
+}
+.intro-drawing-img img {
+  width: 1024px;
+  padding: 10px;
 }

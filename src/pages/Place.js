@@ -9,8 +9,8 @@ const Place = () => (
       <div className="place-wrap">
         <div className="place-map">
           <div className="place-img">
-            <div><img className="place01" src="https://user-images.githubusercontent.com/46181173/120957194-34346880-c790-11eb-90af-09e8320f976b.png" width="90%" alt="place01" /></div>
-            <div><img className="place01" src="https://user-images.githubusercontent.com/46181173/120957198-35659580-c790-11eb-92c8-af2d868cb40e.png" width="90%" alt="palce02" /></div>
+            <div><img className="place01" src="https://user-images.githubusercontent.com/46181173/120957194-34346880-c790-11eb-90af-09e8320f976b.png" alt="place01" /></div>
+            <div><img className="place01" src="https://user-images.githubusercontent.com/46181173/120957198-35659580-c790-11eb-92c8-af2d868cb40e.png" alt="palce02" /></div>
           </div>
         </div>
         <div className="place-time">
