@@ -5,6 +5,7 @@ import SideNav from '../components/common/SideNav';
 import Template from '../components/common/Template';
 import FaqPaper from '../components/suggest/FaqPaper';
 import Freeboard from '../components/suggest/Freeboard';
+import NoticePaper from '../components/suggest/NoticePaper';
 import SuggestPaper from '../components/suggest/SuggestPaper';
 import './Suggest.scss';
 
@@ -16,7 +17,10 @@ const Suggest = () => {
 
   let child = (path === 'free') ? <Freeboard /> : null;
   if (!child) {
-    child = (path === 'faq') ? <FaqPaper /> : <SuggestPaper />;
+    child = (path === 'faq') ? <FaqPaper /> : null;
+  }
+  if (!child) {
+    child = (path === 'write') ? <NoticePaper /> : <SuggestPaper />;
   }
 
   return (

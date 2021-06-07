@@ -1,5 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import React, { useEffect } from 'react';
+import { useHistory } from 'react-router';
+import Routes from '../../constants/routes';
 import { useBoardStore } from '../../stores';
 import './Freeboard.scss';
 
@@ -7,6 +9,8 @@ const Freeboard = observer(() => {
   const {
     fetchBoardList, boardList, query, setQuery,
   } = useBoardStore();
+
+  const history = useHistory();
 
   useEffect(() => {
     fetchBoardList();
@@ -16,13 +20,17 @@ const Freeboard = observer(() => {
     setQuery(value);
   };
 
+  const handleWriteClick = () => {
+    history.push(Routes.WRITE);
+  };
+
   return (
     <div className="free-wrap">
       <h1 className="free-title">공지사항</h1>
       <div className="free-title-div" />
       <div className="board-write">
         <input placeholder="검색어 입력" value={query} onChange={handleQueryInput} />
-        <button type="button">글쓰기</button>
+        <button type="button" onClick={handleWriteClick}>글쓰기</button>
       </div>
       <div className="free-board">
         <div className="board-row row-header">

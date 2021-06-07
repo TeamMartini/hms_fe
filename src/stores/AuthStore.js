@@ -32,8 +32,8 @@ const AuthStore = () => ({
     if (_code === 200) {
       // user check success
       this.username = info.username;
-      this.name = info._name;
-      this.admin = info._admin;
+      this.name = info.name;
+      this.admin = info.admin;
       this.checked = true;
       return true;
     }
