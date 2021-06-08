@@ -23,6 +23,16 @@
 
 .rightBox {
   display: flex;
-  flex: 1 0;
+  width: calc(100% - 340px);
   background: transparent;
+}
+
+.copy {
+  flex: 1;
+  background: #2e75b6dd;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }

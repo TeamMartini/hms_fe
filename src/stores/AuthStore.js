@@ -13,7 +13,8 @@ const AuthStore = () => ({
       // login success
       api.setToken(this.token = token);
       this.saveToken(token);
-      return this.check();
+      const checked = await this.check();
+      return checked;
     }
     // login failed || user check failed
     this.logout();

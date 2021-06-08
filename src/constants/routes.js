@@ -19,6 +19,13 @@ const Routes = {
     BOARD_ADD: '/board/createBoard',
     BOARD_LIST: '/board/listBoard',
     BOARD_INFO: '/board/getBoardInfo/',
+
+    RESERVE_ADD: '/reserve/reservation',
+    RESERVE_LIST: '/reserve/getReservation',
+    RESERVE_ALREADY: '/reserve/getReservationList',
+    RESERVE_REMOVE: '/reserve/deleteByDate',
+
+    IOT: '/iot/info',
   },
 };
 

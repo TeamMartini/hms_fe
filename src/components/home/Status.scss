@@ -1,0 +1,66 @@
+.status-wrap {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 20px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.status-tabs {
+  display: flex;
+}
+
+.status-tabs > button {
+  flex: 1;
+  background: #ccc;
+  border: none;
+  height: 44px;
+}
+
+.toggle-active {
+  color: white;
+  background: #2e75b6 !important;
+}
+
+.status-panels {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.status-panels > div {
+  flex: 1 0 100%;
+  position: relative;
+  transition: all 0.5s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: white;
+  align-items: center;
+}
+
+.status-panels.toggle > div {
+  transform: translateX(-100%);
+}
+
+.status-panels > div > img {
+  width: 100%;
+}
+
+.status-panels > div > .image-map {
+  color: transparent;
+}
+
+.pop-name {
+  left: -100px;
+  top: -100px;
+  z-index: 999;
+  position: absolute;
+  color: white;
+  border-radius: 8px 0 8px 8px;
+  height: 42px;
+  line-height: 42px;
+  padding: 2px 12px;
+  background: #333;
+}

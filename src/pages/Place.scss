@@ -43,12 +43,34 @@
 }
 .time-title {
   width: 100%;
-  height: 80px;
+  height: 60px;
   background: #2e75b6;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.time-title > * {
+  margin: 0 12px;
+}
+.time-title > p {
+  width: 60px;
+  background: #999;
+  font-size: 15px;
+  color: #666;
+  padding: 6px 2px;
+  cursor: not-allowed;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.time-title > p.on {
+  background: white;
+  color: #2e75b6;
+  cursor: pointer;
+}
+.time-title > p.on:hover {
+  background: #174d80;
+  color: white;
 }
 
 .time-wrap {
@@ -65,7 +87,6 @@
 .time-table {
   border-top: 4px solid #2e75b6;
   background: white;
-  padding: 6px 0;
 }
 
 .time-table > li {
@@ -83,7 +104,14 @@
   background: #105494;
 }
 
-.time-table > li:not(.time-active):hover {
+.time-table > li.time-disable {
+  background: #a83030;
+}
+.time-table > li.time-disable:hover {
+  background: #912424;
+}
+
+.time-table > li:not(.time-active):not(.time-disable):hover {
   background: #ddd;
 }
 
@@ -101,7 +129,7 @@
 
 .place-user {
   background: rgba(240, 240, 240, 0.85);
-  height: 200px;
+  height: 320px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -118,6 +146,41 @@
   flex: 1;
   margin: 10px 0;
   padding-top: 15px;
+}
+
+.place-history > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.place-history > div > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 36px;
+}
+.place-history > div > div > p:nth-of-type(1) {
+  width: 50px;
+  font-size: 15px;
+  color: #777;
+  text-align: center;
+}
+.place-history > div > div > p:nth-of-type(2) {
+  flex: 1;
+}
+.place-history > div > div > p:nth-of-type(3) {
+  font-size: 14px;
+  color: #777;
+  text-align: right;
+  margin-right: 12px;
+}
+.place-history > div > p {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: red;
 }
 
 .place-notice {
@@ -153,7 +216,7 @@
 
 .image-map {
   position: absolute;
-  transition: all 0.3s;
+  transition: background 0.3s;
   border: none;
   outline: none;
   background: transparent;
@@ -169,4 +232,28 @@
   margin: 10px 0;
   color: #2e75b6;
   font-weight: bold;
+}
+
+.need-login {
+  padding: 40px;
+  background: #2e75b6;
+  max-height: 100px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.need-login > p {
+  font-size: 18px;
+  margin: 16px;
+}
+
+.need-login > a {
+  background: white;
+  color: #2e75b6;
+  margin: 10px;
+  line-height: 30px;
 }

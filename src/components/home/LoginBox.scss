@@ -1,10 +1,10 @@
 .loginBox {
-  margin-top: 60px;
+  margin-top: 0px;
   padding: 30px;
   background: rgba(4, 109, 198, 0.8);
   width: 340px;
   float: left;
-  height: 210px;
+  height: 234px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -87,5 +87,41 @@
   background: white;
   border: none;
   border-radius: 4px;
+  font-size: 11px;
   padding: 4px;
+}
+
+.place-status > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.place-status > div > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 36px;
+}
+.place-status > div > div > p:nth-of-type(1) {
+  width: 50px;
+  font-size: 15px;
+  color: #ccc;
+  text-align: center;
+}
+.place-status > div > div > p:nth-of-type(2) {
+  flex: 1;
+}
+.place-status > div > div > p:nth-of-type(3) {
+  font-size: 14px;
+  color: #ccc;
+  text-align: right;
+  margin-right: 12px;
+}
+.place-status > div > p {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: red;
 }
