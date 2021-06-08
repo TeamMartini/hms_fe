@@ -14,17 +14,17 @@ import 'react-datepicker/dist/react-datepicker.css';
 const Place = () => {
   const upper = [1054, 558];
   const upperCoords = [
-    232, 8, 506, 163,
-    393, 343, 481, 407,
+    232, 8, 508, 164,
+    393, 343, 482, 410,
     393, 411, 482, 466,
     484, 343, 718, 466,
   ];
   const under = [1055, 620];
   const underCoords = [
-    469, 14, 565, 142,
-    568, 14, 663, 96,
-    667, 12, 765, 97,
-    768, 14, 843, 142,
+    471, 12, 565, 142,
+    568, 12, 663, 99,
+    665, 12, 765, 99,
+    768, 12, 845, 142,
   ];
   const iter = [0, 1, 2, 3];
   const [upCoord, setUpCoord] = useState(upperCoords);

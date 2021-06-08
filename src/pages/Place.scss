@@ -78,13 +78,16 @@
 
 .time-table > li.time-active {
   background: #2e75b6;
+  color: white;
 }
 .time-table > li.time-active:hover {
   background: #105494;
+  cursor: pointer;
 }
 
 .time-table > li:not(.time-active):hover {
   background: #ddd;
+  cursor: pointer;
 }
 
 .time-alert {
@@ -149,6 +152,7 @@
 
 .image-map:hover {
   background: rgba(240, 240, 240, 0.85);
+  cursor: pointer;
 }
 
 .image-map {

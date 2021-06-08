@@ -62,7 +62,6 @@ const Intro = () => {
             <div className="intro-drawing-img">
               <div className="intro-drawing-3d-img">
                 <img src="./images/village_draw_01_low.jpg" alt="" />
-                <img src="./images/village_draw_02_low.jpg" alt="" />
                 <img src="./images/village_draw_03_low.jpg" alt="" />
               </div>
               <div className="intro-drawing-2d-img">

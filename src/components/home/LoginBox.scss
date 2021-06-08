@@ -1,7 +1,7 @@
 .loginBox {
   margin-top: 60px;
   padding: 30px;
-  background: rgba(4, 109, 198, 0.8);
+  background: rgba(4, 109, 198, 0.6);
   width: 340px;
   float: left;
   height: 210px;
@@ -81,6 +81,11 @@
   box-shadow: none;
   background-color: #00b6ad;
   color: white;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background: rgb(7, 149, 231);
 }
 
 .logout-button {
@@ -88,4 +93,9 @@
   border: none;
   border-radius: 4px;
   padding: 4px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: rgb(7, 149, 231);
 }
