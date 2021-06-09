@@ -31,7 +31,6 @@ const BoardStore = () => ({
     this.page = 0;
     const filtered = this._boardList.filter(this.filterFunc);
     this.calcMaxPage(filtered);
-    console.log(this.maxPage);
   },
   get boardList() {
     const boards = this._boardList.filter(this.filterFunc);

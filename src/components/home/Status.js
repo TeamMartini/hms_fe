@@ -53,7 +53,7 @@ const Status = () => {
 
   useEffect(() => {
     fetchInfo();
-  }, [fetchInfo]);
+  });
 
   const handleResize = useCallback(() => {
     let w1 = 0;

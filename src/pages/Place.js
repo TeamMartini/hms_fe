@@ -216,7 +216,6 @@ const Place = () => {
       lender: _lender,
       rentalTime: _rentalTime,
     });
-    console.log(result);
     if (code === 200) {
       if (!result.message && result.ok === 1) {
         alert('대여가 취소되었습니다.');
