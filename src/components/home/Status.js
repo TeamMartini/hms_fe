@@ -72,10 +72,13 @@ const Status = () => {
 
   useEffect(() => {
     window.onload = handleResize;
-    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [handleResize]);
+
+  useEffect(() => {
+    handleResize();
+  });
 
   const [toggle, setToggle] = useState(false);
   const [tabToggle, setTabToggle] = useState(['status-panels']);
