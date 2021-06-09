@@ -1,42 +1,61 @@
-.paper-intro {
-  margin-top: 60px;
-  margin-left: 20px;
-  background: rgba(13, 138, 196, 0.5);
-  min-height: 50px;
-  // box-shadow: 0 0 5px #335;
-  flex: 1;
-  margin-bottom: 60px;
+.content-intro-box {
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+  flex-direction: column;
 }
 
-.paper-wrap {
-  padding: 60px;
+.paper-intro-top {
+  margin-top: 60px;
+}
+
+.intro-top-wrap {
+  text-align: center;
+}
+.intro-top-wrap > img {
+  width: 100%;
+}
+
+.paper-intro {
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  min-height: 50px;
+  flex: 1;
 }
 
 .intro-title {
-  color: rgba(255, 255, 255, 0.87);
+  color: black;
   font-weight: normal;
+  margin: 35px 0px 16px 28px;
+  font-size: 36px;
+  text-align: left;
+}
+.intro-title-01 {
+  color: black;
+  font-weight: normal;
+  margin-top: 50px;
   margin-bottom: 16px;
-  font-size: 32px;
+  font-size: 36px;
 }
 .intro-title-02 {
-  color: rgba(255, 255, 255, 0.747);
+  color: black;
   font-weight: normal;
   margin-top: 100px;
   margin-bottom: 16px;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .intro-first-wrap {
-  background: rgba(255, 255, 255, 0.9);
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .intro-title-div {
-  background: rgba(250, 148, 15, 0.63);
+  background: rgba(9, 98, 170, 0.63);
   height: 8px;
-  width: 100%;
-  margin-bottom: 16px;
+  width: 95%;
+  margin: 0 auto 35px;
 }
+
 .intro-text {
   margin: 30px 30px 0px 30px;
 }
@@ -57,25 +76,34 @@
 
 .intro-inner-img {
   text-align: center;
+  background: rgba(13, 138, 196, 0.5);
+  padding: 20px;
 }
-
 .intro-inner-img img {
   width: calc(33% - 21px);
   padding: 10px;
 }
 
-.intro-drawing-3d-img {
+.intro-drawing-img {
   text-align: center;
+  padding: 20px;
 }
 .intro-drawing-3d-img img {
-  width: calc(33% - 21px);
+  width: calc(50% - 28px);
   padding: 10px;
 }
 
-.intro-drawing-2d-img {
-  text-align: center;
-}
 .intro-drawing-2d-img img {
   width: calc(100% - 36px);
   padding: 10px;
+}
+
+.intro-title-wrap {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1px;
+  text-align: center;
+}
+
+.intro-drawing-img {
+  background-color: rgba(255, 166, 0, 0.5);
 }

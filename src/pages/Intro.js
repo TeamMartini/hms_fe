@@ -19,60 +19,69 @@ const Intro = () => {
 
   return (
     <Template>
-      <Container className="contentBox">
+      <Container className="content-intro-box">
+
+        <Container className="paper-intro-top">
+          <div className="intro-top-wrap">
+            <img src="./images/intro_top.jpg" alt="" />
+          </div>
+        </Container>
+
         <Container className="paper-intro">
-          <div className="paper-wrap">
+          <h1 className="intro-title">빌리지 소개</h1>
+          <div className="intro-title-div" />
 
-            <h1 className="intro-title">빌리지 소개</h1>
-            <div className="intro-title-div" />
-
-            <div className="intro-first-wrap">
-              <div className="intro-text">
-                <img src="./images/village_intro.jpg" alt="" />
-                <div className="text-cont">
-                  {introText.split('\n').map(line => (
-                    <p key={line.split(0, 5)}>
-                      {line}
-                      <br />
-                      <br />
-                    </p>
-                  ))}
-                </div>
+          <div className="intro-first-wrap">
+            <div className="intro-text">
+              <img src="./images/village_intro.jpg" alt="" />
+              <div className="text-cont">
+                {introText.split('\n').map(line => (
+                  <p key={line.split(0, 5)}>
+                    {line}
+                    <br />
+                    <br />
+                  </p>
+                ))}
               </div>
-            </div>
-
-            <h1 className="intro-title">빌리지 내부</h1>
-            <div className="intro-title-div" />
-
-            <div className="intro-inner-img">
-              <img src="./images/village_inner_01_low.jpg" alt="" />
-              <img src="./images/village_inner_02_low.jpg" alt="" />
-              <img src="./images/village_inner_03_low.jpg" alt="" />
-              <img src="./images/village_inner_04_low.jpg" alt="" />
-              <img src="./images/village_inner_05_low.jpg" alt="" />
-              <img src="./images/village_inner_06_low.jpg" alt="" />
-              <img src="./images/village_inner_07_low.jpg" alt="" />
-              <img src="./images/village_inner_08_low.jpg" alt="" />
-              <img src="./images/village_inner_09_low.jpg" alt="" />
-            </div>
-
-            <h1 className="intro-title-02">빌리지 도면</h1>
-            <div className="intro-title-div" />
-
-            <div className="intro-drawing-img">
-              <div className="intro-drawing-3d-img">
-                <img src="./images/village_draw_01_low.jpg" alt="" />
-                <img src="./images/village_draw_02_low.jpg" alt="" />
-                <img src="./images/village_draw_03_low.jpg" alt="" />
-              </div>
-              <div className="intro-drawing-2d-img">
-                <img src="./images/village_draw_04_low.jpg" alt="" />
-                <img src="./images/village_draw_05_low.jpg" alt="" />
-              </div>
-
             </div>
 
           </div>
+        </Container>
+        <Container className="paper-inner-intro">
+          <div className="intro-title-wrap">
+            <h1 className="intro-title-01">Village Inner</h1>
+            <div className="intro-title-div" />
+          </div>
+          <div className="intro-inner-img">
+            <img src="./images/village_inner_01_low.jpg" alt="" />
+            <img src="./images/village_inner_02_low.jpg" alt="" />
+            <img src="./images/village_inner_03_low.jpg" alt="" />
+            <img src="./images/village_inner_04_low.jpg" alt="" />
+            <img src="./images/village_inner_05_low.jpg" alt="" />
+            <img src="./images/village_inner_06_low.jpg" alt="" />
+            <img src="./images/village_inner_07_low.jpg" alt="" />
+            <img src="./images/village_inner_08_low.jpg" alt="" />
+            <img src="./images/village_inner_09_low.jpg" alt="" />
+          </div>
+        </Container>
+        <Container className="paper-draw-intro">
+          <div className="intro-title-wrap">
+            <h1 className="intro-title-02">Village Drawing</h1>
+            <div className="intro-title-div" />
+          </div>
+
+          <div className="intro-drawing-img">
+            <div className="intro-drawing-3d-img">
+              <img src="./images/village_draw_01_low.jpg" alt="" />
+              <img src="./images/village_draw_03_low.jpg" alt="" />
+            </div>
+            <div className="intro-drawing-2d-img">
+              <img src="./images/village_draw_04_low.jpg" alt="" />
+              <img src="./images/village_draw_05_low.jpg" alt="" />
+            </div>
+
+          </div>
+
         </Container>
       </Container>
     </Template>
