@@ -75,8 +75,8 @@ const LoginBox = observer(({ login, logout }) => {
     <div className="loginBox">
       <div className={username ? 'loggedin' : 'hidden'}>
         <div className="loggedin-user">
-          <p style={{ color: '#222' }}>
-            안녕하세요
+          <p>
+
             {' '}
             <span style={{ fontWeight: 'bold' }}>{name}</span>
             {' '}

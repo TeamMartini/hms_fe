@@ -43,7 +43,7 @@ const FaqPaper = observer(() => {
 
   return (
     <div className="faq-wrap">
-      <h1 className="faq-title">FAQ</h1>
+      <h1 className="faq-title">[FAQ] 자주 묻는 질문</h1>
       <div className="faq-title-div" />
       <div className="faq-search">
         <input value={query} onChange={handleInputChange} />
