@@ -78,7 +78,8 @@ const Status = () => {
 
   useEffect(() => {
     handleResize();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const [toggle, setToggle] = useState(false);
   const [tabToggle, setTabToggle] = useState(['status-panels']);
