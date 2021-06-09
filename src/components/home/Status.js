@@ -57,12 +57,6 @@ const Status = () => {
     fetchInfo();
   }, [fetchInfo]);
 
-  useEffect(() => {
-    if (location) {
-      fetchInfo();
-    }
-  }, [fetchInfo, location]);
-
   const handleResize = useCallback(() => {
     let w1 = 0;
     let w2 = 0;
@@ -77,6 +71,12 @@ const Status = () => {
     setUpCoord(upc);
     setUdCoord(udc);
   }, [under, underCoords, upper, upperCoords]);
+
+  useEffect(() => {
+    if (location) {
+      handleResize();
+    }
+  }, [handleResize, location]);
 
   useEffect(() => {
     window.onload = handleResize;
