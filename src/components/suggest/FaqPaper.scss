@@ -51,13 +51,18 @@
   width: 100%;
   text-align: left;
   outline: none;
-  transition: 0.4s;
+  transition: all 0.4s;
   border-bottom: none;
   font-size: 16px;
 }
 
 .accordion > span {
   font-weight: bold;
+}
+
+.accordion.active {
+  color: white;
+  background-color: rgb(25, 156, 207);
 }
 
 .accordion:last-of-type {
