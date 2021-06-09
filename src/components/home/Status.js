@@ -1,10 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { useLocation } from 'react-router';
 import Routes from '../../constants/routes';
 import api from '../../utils/api';
 
 import './Status.scss';
 
 const Status = () => {
+  const location = useLocation();
   const [handler, setHandler] = useState(null);
   const [pos, setPos] = useState([-100, -100, -1]);
   const [status, setStatus] = useState([]);
@@ -53,7 +55,13 @@ const Status = () => {
 
   useEffect(() => {
     fetchInfo();
-  });
+  }, [fetchInfo]);
+
+  useEffect(() => {
+    if (location) {
+      fetchInfo();
+    }
+  }, [fetchInfo, location]);
 
   const handleResize = useCallback(() => {
     let w1 = 0;
