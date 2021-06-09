@@ -1,12 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useLocation } from 'react-router';
 import Routes from '../../constants/routes';
 import api from '../../utils/api';
 
 import './Status.scss';
 
 const Status = () => {
-  const location = useLocation();
   const [handler, setHandler] = useState(null);
   const [pos, setPos] = useState([-100, -100, -1]);
   const [status, setStatus] = useState([]);
@@ -73,13 +71,8 @@ const Status = () => {
   }, [under, underCoords, upper, upperCoords]);
 
   useEffect(() => {
-    if (location) {
-      handleResize();
-    }
-  }, [handleResize, location]);
-
-  useEffect(() => {
     window.onload = handleResize;
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [handleResize]);
