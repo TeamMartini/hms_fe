@@ -47,3 +47,5 @@ yarn serve -s build
 # yarn serve -s build -p {YOUR_PORT}
 ```
 
+## 백엔드 연동
+src/utils/api.js 파일의 9번라인 baseURL을 백엔드 서버 URL로 변경 후 실행
